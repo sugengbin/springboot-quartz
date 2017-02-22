@@ -1,6 +1,3 @@
-/*
-* Copyright 2015-2020 SF-Express Tech Company. 
-*/
 package info.sugengbin.springboot.quartz;
 
 import org.slf4j.Logger;
@@ -15,7 +12,7 @@ import info.sugengbin.springboot.constant.QuartzConstant;
  * scheduler factory <br/>
  * Date: 2016年8月23日<br/>
  * 
- * @author 449632
+ * @author sugengbin
  */
 @Component
 public class QuartzTestSchedulerFactoryBean extends SchedulerFactoryBean {
