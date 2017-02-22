@@ -16,9 +16,9 @@ public class QuartzTestServiceImpl implements QuartzTestService {
 	private final static Logger logger = LoggerFactory.getLogger(QuartzTestServiceImpl.class);
 
 	@Override
-	public void run() {
+	public void run(String input) {
 		// TODO biz code
-		logger.info("do something , date:{}", System.currentTimeMillis());
+		logger.info("{} run, date:{}", input, System.currentTimeMillis());
 	}
 
 }

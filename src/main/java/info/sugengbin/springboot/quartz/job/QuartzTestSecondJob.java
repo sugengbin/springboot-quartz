@@ -20,9 +20,9 @@ import info.sugengbin.springboot.biz.QuartzTestService;
  */
 @PersistJobDataAfterExecution
 @DisallowConcurrentExecution
-public class QuartzTestJob extends QuartzJobBean {
+public class QuartzTestSecondJob extends QuartzJobBean {
 
-	private final static Logger logger = LoggerFactory.getLogger(QuartzTestJob.class);
+	private final static Logger logger = LoggerFactory.getLogger(QuartzTestSecondJob.class);
 
 	private QuartzTestService quartzTestService = null;
 
@@ -38,7 +38,7 @@ public class QuartzTestJob extends QuartzJobBean {
 	@Override
 	protected void executeInternal(JobExecutionContext context) throws JobExecutionException {
 		init(context);
-		quartzTestService.run("first");
+		quartzTestService.run("second");
 	}
 
 }

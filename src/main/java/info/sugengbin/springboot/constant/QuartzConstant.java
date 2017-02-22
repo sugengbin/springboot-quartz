@@ -11,23 +11,42 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "quartz")
 public class QuartzConstant {
 
-	private Integer enableTask;
-	private String cron;
+	private Integer enableFirstTask;
+	private String firstCron;
 
-	public Integer getEnableTask() {
-		return enableTask;
+	private Integer enableSecondTask;
+	private String secondCron;
+
+	public Integer getEnableFirstTask() {
+		return enableFirstTask;
 	}
 
-	public void setEnableTask(Integer enableTask) {
-		this.enableTask = enableTask;
+	public void setEnableFirstTask(Integer enableFirstTask) {
+		this.enableFirstTask = enableFirstTask;
 	}
 
-	public String getCron() {
-		return cron;
+	public String getFirstCron() {
+		return firstCron;
 	}
 
-	public void setCron(String cron) {
-		this.cron = cron;
+	public void setFirstCron(String firstCron) {
+		this.firstCron = firstCron;
+	}
+
+	public Integer getEnableSecondTask() {
+		return enableSecondTask;
+	}
+
+	public void setEnableSecondTask(Integer enableSecondTask) {
+		this.enableSecondTask = enableSecondTask;
+	}
+
+	public String getSecondCron() {
+		return secondCron;
+	}
+
+	public void setSecondCron(String secondCron) {
+		this.secondCron = secondCron;
 	}
 
 }

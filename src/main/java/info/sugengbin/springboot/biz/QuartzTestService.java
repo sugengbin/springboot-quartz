@@ -6,5 +6,5 @@ package info.sugengbin.springboot.biz;
  */
 public interface QuartzTestService {
 
-	void run();
+	void run(String input);
 }
